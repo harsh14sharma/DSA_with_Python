@@ -6,14 +6,24 @@ while test_case >0:
     time =0
     i=0
     while(i < len(s)):
-        if(i!=len(s)-1 and s[i]!=s[i+1]):
-            time+=1
-        elif(i!=len(s)-1 and s[i]==s[i+1]):
-            time+=1
-            i+=1
+        # if(i!=len(s)-1 and s[i]!=s[i+1]):
+        #     time+=1
+        # elif(i!=len(s)-1 and s[i]==s[i+1]):
+        #     time+=1
+        #     i+=1
+        # else:
+        #     time+=1
+        # i+=1
+        if(i == n-1):
+            time+=1 
+            break
+        if(s[i] == s[i+1]):
+            time+=1 
+            i+=2
         else:
-            time+=1
+            time+=1 
+            i+=1
             
-        i+=1
+        
     print(time)
     test_case -=1
