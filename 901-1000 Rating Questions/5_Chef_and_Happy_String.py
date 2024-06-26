@@ -5,7 +5,7 @@ while t > 0:
     count=0
     vowels=['a','e','i','o','u']
     for _ in range(len(s)-2):
-        if ((s[_] in vowels) and (s[_+1] in vowels) and (s[_+2] in vowels)):
+        if (s[_] in vowels and s[_+1] in vowels and s[_+2] in vowels):
             print("HAPPY")
             break
         
